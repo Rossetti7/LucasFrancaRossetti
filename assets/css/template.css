@@ -1,0 +1,166 @@
+/* LUCAS FRANÇA ROSSETTI, Analise e Desenvolvimento de SISTEMAS */
+* {
+	font-family:Arial; /* serve para deixar todas as fontes em arial */
+}
+
+/* serve para deixar todas as margens zeradas, para que modifique manualmente depois */
+body {
+	margin:0;
+	padding:0;
+}
+
+/* flexivel e centralizado */
+header {
+	display:flex;
+	justify-content:center;
+	height:100px;
+}
+.container {
+	display:flex;
+	justify-content:space-between;
+	width:990px;
+}
+.MeuNome {
+	display:flex;
+	align-items:center;
+}
+.menu {
+	display:flex;
+	align-items:center;
+}
+
+/* menu de navegação, usando NAV pois é o mais adequado */
+nav ul,
+nav li {
+	list-style: none;
+	margin:0;
+	padding:0;
+}
+nav ul {
+	display:flex;
+}
+nav a {
+	display:block;
+	padding:15px;
+	text-decoration:none;
+	text-transform:uppercase;
+	color:black;
+}
+
+/* ao clicar ficará branco a letra e muda o fundo, visualmente fica agradável e parece um menu mesmo */
+nav .active a,
+nav a:hover {
+	background-color:#39aae1;
+	color:white;
+}
+
+/* # é para pegar a id do html */
+#banner {
+	display:flex;
+	justify-content:center;
+	background-image:url('../images/img1.jpg');
+	background-position:center;
+	background-size:cover;
+	height:500px;
+}
+
+/* abaixo tem '.' para pegar cada class */
+.banner_headline {
+	flex:1;
+	display:flex;
+	flex-direction: column;
+	justify-content:center;
+}
+.banner_headline h1 {
+	color:#FFFFFF;
+	font-size:70px;
+	text-shadow:0px 1px 0px #555555;
+	margin:0;
+	padding:0;
+	max-width:350px;
+}
+.banner_headline h2 {
+	color:#FFFFFF;
+	font-size:21px;
+	text-shadow:0px 1px 0px #555555;
+	margin:0;
+	padding:0;
+	max-width:350px;
+	margin-top:30px;
+}
+
+
+.footer_class {
+	padding: 10px;
+	color: black;
+	background-color:darkgray;
+	display:flex;
+	justify-content:center;
+}
+
+/* auxiliador de media pro menu no header */
+@media (max-width:600px) {
+
+	.banner_headline {
+		padding:20px;
+	}
+	.banner_headline h1 {
+		font-size:55px;
+	}
+	.banner_headline h2 {
+		font-size:17px;
+	}
+
+	header .container {
+		flex-direction: row;
+	}
+
+	nav ul {
+		flex-direction: column;
+		display:none;
+		position: absolute;
+	    left: 0;
+	    width: 100%;
+	    background-color: #FFFFFF;
+	}
+
+	.MeuNome {
+		padding-left:20px;
+	}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
